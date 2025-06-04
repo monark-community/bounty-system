@@ -25,7 +25,11 @@ const Hero = () => {
               </Button>
             </Link>
             <Link to="/create-bounty">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-white text-white bg-transparent hover:bg-white/10 hover:text-white hover:border-white px-8 py-3"
+              >
                 Create Your First Bounty
               </Button>
             </Link>
