@@ -191,8 +191,8 @@ const Profile = () => {
                         </Badge>
                         <span className="text-sm text-gray-500">
                           {bounty.status === "Completed" 
-                            ? `Completed ${new Date(bounty.completedDate!).toLocaleDateString()}`
-                            : `Submitted ${new Date(bounty.submittedDate!).toLocaleDateString()}`
+                            ? `Completed ${new Date(bounty.completedDate).toLocaleDateString()}`
+                            : `Submitted ${new Date(bounty.submittedDate).toLocaleDateString()}`
                           }
                         </span>
                         {bounty.rating && (
