@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="py-20 px-4 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-700 text-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
             Trustless Bounty
             <br />
             Management Platform
