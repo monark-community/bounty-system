@@ -274,7 +274,7 @@ const Profile = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Response Time</span>
-                    <span className="font-semibold">< 24 hours</span>
+                    <span className="font-semibold">&lt; 24 hours</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Member Since</span>
