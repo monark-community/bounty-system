@@ -11,6 +11,7 @@ import BountyDetail from "./pages/BountyDetail";
 import Profile from "./pages/Profile";
 import Leaderboard from "./pages/Leaderboard";
 import NotFound from "./pages/NotFound";
+import MonarkBannerWrapper from "./components/MonarkDemoWrapper";
 
 const queryClient = new QueryClient();
 
@@ -19,18 +20,20 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/bounties" element={<Bounties />} />
-          <Route path="/create-bounty" element={<CreateBounty />} />
-          <Route path="/bounty/:id" element={<BountyDetail />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <MonarkBannerWrapper>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/bounties" element={<Bounties />} />
+            <Route path="/create-bounty" element={<CreateBounty />} />
+            <Route path="/bounty/:id" element={<BountyDetail />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </MonarkBannerWrapper>
     </TooltipProvider>
   </QueryClientProvider>
 );
